@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
         <meta charset="utf-8" />
-        <title>Galery</title>
+        <title>My super title</title>
         <link rel="stylesheet" href="http://gnupyx.ninja/galery/theme/css/main.css" />
         <link href="http://gnupyx.ninja/galery/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Galery Atom Feed" />
 
@@ -29,18 +29,51 @@ function greyon(img)
         <header id="banner" class="body">
                 <h1><a href="http://gnupyx.ninja/galery/">Galery </a></h1>
                 <!--nav><ul>
-                    <li><a href="http://gnupyx.ninja/galery/category/yeah.html">yeah</a></li>
+                    <li class="active"><a href="http://gnupyx.ninja/galery/category/yeah.html">yeah</a></li>
                 </ul></nav-->
         </header><!-- /#banner -->
+<section id="pagecontent" class="body">
+	<script>
+	Mousetrap.bind('left', prev);
+	Mousetrap.bind('right', next);
 
-    <aside id="featured" class="body">
 
-
-	<div style="float:left">
-		<a href="http://gnupyx.ninja/galery/my-super-post.html">
-		<img src="images/" class="bw" id="ima1" onmouseover="greyoff(this.id)" onmouseleave="greyon(this.id)" border="0" title="My super title" alt="My super title" /></a>
+	function prev(element)
+	{
+		document.getElementById('prev').click();
+	}
+	function next(element)
+	{
+		document.getElementById('next').click();
+	}
+	</script>
+  <article>
+    <header>
+	<div>
+		<div style="float:left">
+		      <h1 class="entry-title">
+		        <a href="http://gnupyx.ninja/galery/my-super-post.html" rel="bookmark"
+		           title="Permalink to My super title">My super title</a>
+		      </h1>
+		</div>
+		<div style="float:right"><h2>        <abbr class="published" title="2010-10-03T10:20:00+02:00">
+                dim. 03 octobre 2010
+        </abbr>
+		<br />
+        <abbr class="modified" title="2010-10-04T18:40:00+02:00">
+                Updated: lun. 04 octobre 2010
+        </abbr>
+</h2></div>
 	</div>
-    </aside><!-- /#featured -->
+
+	<div style="clear:both"></div>
+
+    </header>
+      
+
+
+  </article>
+</section>
         <section id="extras" class="body">
                 <div class="social">
                         <ul>
